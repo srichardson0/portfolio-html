@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Sasha R. Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <style>
+      /* Timeline: LinkedIn style (single column, wide cards) */
+      .timeline {
+        position: relative;
+        max-width: 900px;
+        margin: 3rem auto;
+        padding-left: 60px; /* space for line and circles */
+      }
+
+      .timeline::after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        background-color: var(--primary-color);
+        top: 0;
+        bottom: 0;
+        left: 40px;
+        margin-left: -2px;
+      }
+
+      .timeline-item {
+        position: relative;
+        width: 100%;
+        margin-bottom: 2rem;
+        opacity: 0;               /* hidden before animation */
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+      }
+
+      .timeline-item.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .timeline-item::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: -34px;
+        background-color: var(--bg-primary);
+        border: 4px solid var(--primary-color);
+        top: 20px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      .timeline-content {
+        background-color: transparent;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+        max-width: 70%;
+      }
+
+    .timeline-content h3 {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    margin-bottom: 0.1rem; /* Reduced from 0.3rem */
+    font-size: 1.25rem; /* Slightly reduced font size */
+    }
+
+    /* Decrease spacing around the paragraph text */
+    .timeline-content p {
+    margin: 0.1rem 0; /* Reduced margin on top and bottom */
+    line-height: 1.3; /* Decreased line height for tighter spacing */
+}
+
+      .school-icon {
+        width: 48px;
+        height: auto;
+        border-radius: 8px;
+        margin-right: 15px;
+      }
+
+      /* Experience Cards */
+      .experience-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .experience-card {
+        background: transparent;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: var(--shadow);
+        transition: transform 0.3s ease;
+      }
+
+      .experience-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .experience-card h3 {
+        margin-bottom: 0.5rem;
+        color: var(--primary-color);
+      }
+
+      .experience-card p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="index.html"
+              ><img src="./assets/logo.png" alt="Your Logo"
+            /></a>
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="index.html">HOME</a></li>
+            <li><a class="nav-link" href="index.html#projects">PROJECTS</a></li>
+            <li><a class="nav-link" href="about.html">ABOUT ME</a></li>
+            <li><a class="nav-link" href="https://sfrichardson9.wordpress.com/" target="_blank">BLOG</a></li>
+            <li>
+              <a
+                class="nav-link btn btn-primary"
+                href="assets/Sasha_Resume.pdf"
+                target="_blank"
+                >RESUME <i class="fas fa-arrow-right"></i
+              ></a>
+            </li>
+
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
+            <!-- Hamburger menu -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+    <!-- About Section -->
+    <section class="about-container container">
+      <div class="content-text">
+        <h2>About Me</h2>
+        <p>
+          I’m Sasha Richardson, originally from Jamaica 🇯🇲  and now based in New York City.  
+          I’m pursuing an MA in Digital Humanities at The Graduate Center, CUNY.  
+          My work sits at the intersection of <strong>data science</strong>, <strong>digital storytelling</strong>, and <strong>social equity</strong>.  
+        </p>
+        <p>
+          I love building tools that help researchers, organizations, and communities make sense of complex information.  
+          My background blends <strong>data engineering</strong>, <strong>analytics</strong>, and <strong>human-centered design</strong>, giving me a unique ability to connect technical rigor with meaningful impact.
+        </p>
+      </div>
+
+      <div class="content-text">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>
+                <img src="assets/icons/cuny-gc.png" alt="CUNY Graduate Center" class="school-icon" />
+                The Graduate Center, CUNY
+              </h3>
+              <p><strong>MA, Digital Humanities</strong></p>
+              <p>Visualization and Mapping</p>
+              <p class="education-date">Expected 2027</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>
+                <img src="assets/icons/baruch.png" alt="Baruch College" class="school-icon" />
+                Baruch College, CUNY
+              </h3>
+              <p><strong>MS, Business Analytics</strong></p>
+              <p>Data Analytics</p>
+              <p class="education-date">2021 – 2022</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>
+                <img src="assets/icons/fsu.png" alt="Fayetteville State University" class="school-icon" />
+                Fayetteville State University
+              </h3>
+              <p><strong>BS, Computer Science</strong> (Summa Cum Laude)</p>
+              <p class="education-date">2017 – 2021</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content-text">
+        <h2>Experience Highlights</h2>
+        <div class="experience-grid">
+          <div class="experience-card">
+            <h3>CUNY ICORP</h3>
+            <p>Assistant Program Coordinator – Mentoring students, curriculum design, and building data tools for research.</p>
+          </div>
+          <div class="experience-card">
+            <h3>ING Financial Services</h3>
+            <p>Data Analyst Intern – Built dashboards, analyzed P&L statements, and automated reporting with Python & SQL.</p>
+          </div>
+          <div class="experience-card">
+            <h3>Madison Square Garden Entertainment</h3>
+            <p>Student Associate – Developed SQL dbt models, automated workflows, and improved reporting pipelines.</p>
+          </div>
+          <div class="experience-card">
+            <h3>Research Internships</h3>
+            <p>From metabolomics at UAMS to machine learning at NYU, I’ve explored data across health, tech, and humanities.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-text">
+        <h2>Beyond Work</h2>
+        <p>
+          When I’m not coding or researching, I’m usually exploring NYC, experimenting with 
+          creative writing, or brainstorming new ways technology can support social good. 
+          My curiosity drives me to keep learning and connecting ideas across disciplines.  
+          I’m excited to see where my journey in data and digital humanities takes me next!
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:sfrichardson9@gmail.com">sfrichardson9@gmail.com</a>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/sasha-richardson" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Linkedin" /></a>
+          <a href="https://github.com/srichardson0" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+          <a href="https://scholar.google.com/citations?hl=en" target="_blank"><img src="./assets/google-scholar-logo.png" alt="Google Scholar" /></a>
+        </div>
+        <p>&copy; <span id="datee"></span> Sasha Richardson</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+      // Intersection Observer for timeline animation
+      const items = document.querySelectorAll(".timeline-item");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+
+      items.forEach(item => observer.observe(item));
+    </script>
+  </body>
+</html>

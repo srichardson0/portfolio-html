@@ -116,7 +116,7 @@ h2::selection {
 .card a {
   color: #ffffff;
   transition: 0.25s ease-in-out;
-  font-size: 1.1rem;
+  font-size: 2.1rem;
   margin-right: 0.3rem;
 }
 
@@ -125,7 +125,7 @@ h2::selection {
 }
 
 .card:hover {
-  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.363);
 }
 
 .card:hover .project-info {
@@ -175,3 +175,81 @@ h2::selection {
     font-size: 2.5rem;
   }
 }
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center; /* Centers the icons horizontally */
+  align-items: center; /* Aligns them vertically */
+  gap: 20px; /* Adds space between the icons */
+  margin-top: 15px; /* Adds space above the icons */
+}
+
+.social-icon {
+  width: 40px; /* Sets the width of the icons */
+  height: auto; /* Maintains the aspect ratio */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Makes the icon slightly bigger on hover */
+}
+
+/* Filtering Tags */
+.filter-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows buttons to wrap to the next line on smaller screens */
+  gap: 10px; /* Provides space between the buttons */
+  margin: 2rem 0;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.2rem;
+  border: 1px solid var(--text-color); /* Adds a subtle border */
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-primary);
+  border-color: var(--primary-color);
+}
+
+.filter-btn.active {
+  background-color: var(--primary-color);
+  color: var(--bg-primary);
+  border-color: var(--primary-color);
+}
+
+/* About Section */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.about-container .content-text {
+  width: 60%;
+  text-align: left;
+}
+
+.about-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-container p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+

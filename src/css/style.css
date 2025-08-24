@@ -182,11 +182,15 @@ body {
 }
 
 .card .project-bio p {
-  font-size: 0.83rem;
+  font-size: 1.25rem;
+  color: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .card .project-bio h3 {
-  font-size: 0.9rem;
+  font-size: 1.25rem;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .project-info {
@@ -202,7 +206,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  top: 160px;
+  top: 100px;
   left: 10px;
 }
 
