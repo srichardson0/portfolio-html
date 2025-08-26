@@ -5,44 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary Meta Tags -->
-    <title>Sasha R. Portfolio</title>
-    <meta name="title" content="Portfolio Template - Open source" />
+    <title>Sasha Richardson | Portfolio</title>
+    <meta name="title" content="Sasha Richardson - Data Science & Digital Humanities Portfolio" />
     <meta
       name="description"
-      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project"
+      content="MA student in Digital Humanities, data scientist, and researcher. I build tools for storytelling, analysis, and decision-making."
     />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://github.com/CommunityPro/portfolio-html"
-    />
-    <meta property="og:title" content="Portfolio Template - Open source" />
-    <meta
-      property="og:description"
-      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project"
-    />
-    <meta
-      property="og:image"
-      content="https://user-images.githubusercontent.com/62628408/150613011-b78a7f5a-0af1-4312-aab0-0022e7258693.png"
-    />
+    <meta property="og:url" content="https://srichardson0.github.io/" />
+    <meta property="og:title" content="Sasha Richardson | Data Science & Digital Humanities" />
+    <meta property="og:description" content="Exploring where data, design, and storytelling meet. See my projects, research, and writing." />
+    <meta property="og:image" content="https://drive.google.com/file/d/1PPVJq_X6430DGQp16BvgxXg--ENreKHO/view?usp=drive_link" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content="https://github.com/CommunityPro/portfolio-html"
-    />
-    <meta property="twitter:title" content="Portfolio Template - Open source" />
-    <meta
-      property="twitter:description"
-      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project"
-    />
-    <meta
-      property="twitter:image"
-      content="https://user-images.githubusercontent.com/62628408/150613011-b78a7f5a-0af1-4312-aab0-0022e7258693.png"
-    />
+    <meta property="twitter:url" content="https://srichardson0.github.io/" />
+    <meta property="twitter:title" content="Sasha Richardson | Portfolio" />
+    <meta property="twitter:description" content="Data scientist & digital humanist building tools for research, visualization, and storytelling." />
+    <meta property="twitter:image" content="https://drive.google.com/file/d/1PPVJq_X6430DGQp16BvgxXg--ENreKHO/view?usp=drive_link" />
+
 
     <!-- Link -->
     <link
@@ -93,7 +76,7 @@
           <!-- Logo -->
           <h1 id="logo">
             <a href="index.html"
-              ><img src="./assets/logo.png" alt="Your Logo"
+              ><img src="./assets/logo.png" alt="Sasha Richardson Logo"
             /></a>
           </h1>
           <!-- Navbar links -->
@@ -101,7 +84,7 @@
             <li><a class="nav-link" href="index.html">HOME</a></li>
             <li><a class="nav-link" href="index.html#projects">PROJECTS</a></li>
             <li><a class="nav-link" href="about.html">ABOUT ME</a></li>
-            <li><a class="nav-link" href="https://sfrichardson9.wordpress.com/" target="_blank">BLOG</a></li>
+            <!-- <li><a class="nav-link" href="https://sfrichardson9.wordpress.com/" target="_blank">BLOG</a></li> -->
             <li>
               <a
                 class="nav-link btn btn-primary"
@@ -133,7 +116,7 @@
         <img
           class="profile-image"
           src="assets/profile-image.png"
-          alt=""
+          alt="Sasha Richardson Profile Picture"
         />
         <h1>Hi I'm Sasha</h1>
 
@@ -146,19 +129,22 @@
           </p>
         </div>
         <a
-          href="https://www.linkedin.com/in/sasha-richardson"
+          href="mailto:sfrichardson9@gmail.com"
           class="btn btn-secondary"
           target="_blank"
-          >Connect With Me</a
+          >sfrichardson9@gmail.com</a
         >
       </section>
     </header>
     <div class="social-links">
+      <a href="https://www.linkedin.com/in/sasha-richardson" target="_blank">
+        <img src="./assets/linkedin-logo.webp" alt="Sasha Richardson LinkedIn" class="social-icon" />
+      </a>
       <a href="https://scholar.google.com/citations?hl=en" target="_blank">
-        <img src="assets/google-scholar-logo.png" alt="Google Scholar" class="social-icon" />
+        <img src="assets/google-scholar-logo.png" alt="Sasha Richardson Google Scholar" class="social-icon" />
       </a>
       <a href="https://orcid.org/0009-0004-7585-4470" target="_blank">
-        <img src="assets/orcid-logo.png" alt="ORCID" class="social-icon" />
+        <img src="assets/orcid-logo.png" alt="Sasha Richardson ORCID" class="social-icon" />
       </a>
     </div>
 
@@ -169,73 +155,114 @@
     <h2>Projects</h2>
     <p>See What I've Worked on</p>
   </div>
-
   <div class="filter-tags">
     <button class="filter-btn active" data-filter="all">All</button>
     <button class="filter-btn" data-filter="web-dev">Web Development</button>
     <button class="filter-btn" data-filter="Statistics">Statistics</button>
     <button class="filter-btn" data-filter="ML">Machine Learning</button>
   </div>
-
-  <article class="project">
-    <div href="" class="card" data-tag="web-dev ML">
-      <div class="project-info">
-        <div class="project-bio">
-          <h3>PeopleMap</h3>
-          <p>NLP, D3.js</p>
+  <article class="project-grid">
+    <div class="project-card" data-tag="web-dev ML">
+      <img
+        src="assets/project/project-one.png"
+        alt="PeopleMap Project Screenshot"
+        class="project-image"
+      />
+      <div class="project-details">
+        <h3 class="project-title">PeopleMap</h3>
+        <p class="project-description">
+          Interactive tool using NLP + D3.js to map researchers, modernize directories, and spark new academic collaborations.
+        </p>
+        <div class="project-tags">
+          <span class="tag" style="color: #0c6125;">NLP</span>
+          <span class="tag" style="color: #cc932a;">D3.js</span>
         </div>
-        <div class="project-link">
-          <a href="https://github.com/poloclub/people-map" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://poloclub.github.io/people-map/ml/" target="_blank"><i class="fas fa-globe"></i></a>
+        <div class="project-links">
+          <a
+            href="https://poloclub.github.io/people-map/ml/"
+            target="_blank"
+            class="btn btn-secondary"
+            >Demo</a
+          >
+          <a
+            href="https://github.com/poloclub/people-map"
+            target="_blank"
+            class="btn btn-secondary"
+            >GitHub</a
+          >
         </div>
       </div>
     </div>
-    
-    <div href="" class="card" data-tag="Statistics">
-      <div class="project-info">
-        <div class="project-bio">
-          <h3>Hypothesis Testing of Movie Ratings Data</h3>
-          <p>Python</p>
+    <div class="project-card" data-tag="Statistics">
+      <img
+        src="assets/project/project-two.png"
+        alt="Movie Ratings Project Screenshot"
+        class="project-image"
+      />
+      <div class="project-details">
+        <h3 class="project-title">Hypothesis Testing of Movie Ratings Data</h3>
+        <p class="project-description">
+          Replicated published research with Python, applying rigorous hypothesis testing to uncover patterns in real audience data.
+        </p>
+        <div class="project-tags">
+          <span class="tag" style="color: #2a73cc;">Python</span>
         </div>
-        <div class="project-link">
-          <a href="https://github.com/srichardson0/Hypothesis-testing-of-movie-ratings-data#" target="_blank"><i class="fab fa-github"></i></a>
+        <div class="project-links">
+          <a
+            href="https://github.com/srichardson0/Hypothesis-testing-of-movie-ratings-data"
+            target="_blank"
+            class="btn btn-secondary"
+            >GitHub</a
+          >
         </div>
       </div>
     </div>
-
-    <div href="" class="card" data-tag="Statistics">
-      <div class="project-info">
-        <div class="project-bio">
-          <h3>Marketing Analysis</h3>
-          <p>Python</p>
+    <div class="project-card" data-tag="Statistics">
+      <img
+        src="assets/project/project-three.png"
+        alt="Marketing Analysis Project Screenshot"
+        class="project-image"
+      />
+      <div class="project-details">
+        <h3 class="project-title">Marketing Analysis</h3>
+        <p class="project-description">
+          Python-based EDA + visualization revealing actionable insights, driving data-informed marketing strategies and business decisions.
+        </p>
+        <div class="project-tags">
+          <span class="tag" style="color: #2a73cc;">Python</span>
         </div>
-        <div class="project-link">
-          <a href="https://github.com/srichardson0/MarketAnalysisProject" target="_blank"><i class="fab fa-github"></i></a>
+        <div class="project-links">
+          <a
+            href="https://github.com/srichardson0/MarketAnalysisProject"
+            target="_blank"
+            class="btn btn-secondary"
+            >GitHub</a
+          >
         </div>
       </div>
     </div>
 
   </article>
 
-      <a href="#" class="btn btn-secondary"
+      <!-- <a href="#" class="btn btn-secondary"
         target="_blank" >See More <i class="fas fa-arrow-right"></i
-      ></a>
-    </section>
+      ></a> -->
+</section>
 
     <!-- Footer -->
     <footer id="footer">
       <div class="container">
         <a href="mailto:sfrichardson9@gmail.com">sfrichardson9@gmail.com</a>
         <div class="social">
-          <a href="https://www.linkedin.com/in/sasha-richardson" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Linkedin" /></a>
-          <a href="https://github.com/srichardson0" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
-          <a href="https://scholar.google.com/citations?hl=en" target="_blank"><img src="./assets/google-scholar-logo.png" alt="Google Scholar" /></a>
+          <a href="https://www.linkedin.com/in/sasha-richardson" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Sasha Richardson Linkedin" /></a>
+          <a href="https://github.com/srichardson0" target="_blank"><img src="./assets/github-icon.svg" alt="Sasha Richardson GitHub" /></a>
+          <a href="https://scholar.google.com/citations?hl=en" target="_blank"><img src="./assets/google-scholar-logo.png" alt="Sasha Richardson Google Scholar" /></a>
         </div>
         <p>&copy; <span id="datee"></span> Sasha Richardson</p>
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="project_filter.js"></script>
     <script>
       // Intersection Observer for timeline animation
       const items = document.querySelectorAll(".timeline-item");

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const filterButtons = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.card');
+  const projectCards = document.querySelectorAll('.project-card');
 
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Check if the card's tags include the filter value or if the filter is 'all'
         if (filterValue === 'all' || cardTags.includes(filterValue)) {
-          card.style.display = 'block'; // Or whatever your default display is
+          card.style.display = 'flex'; 
         } else {
           card.style.display = 'none';
         }
